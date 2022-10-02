@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Traversing</title>
+</head>
+
+<body>
+    <h1>Array Traversing</h1>
+
+    <script>
+
+        let array = [1, 5, 7, 9, 8, 4, 12, 45, 78, 94, 5];
+
+        // //Traversing the array
+        // for(let i=0;i<array.length;i++){
+        //     console.log(array[i]);
+        //     document.write(`${array[i]}<br>`);
+        // }
+
+
+        //Accessing the array element
+        // let x = 5;
+        // document.write(array[x]);
+
+
+
+        //Accessing the array element
+function getElement(){
+    let element = document.getElementById("element").value;
+    if(element<=array.length && parseInt(element) && element > 0 ||  element ==0 && element != ""){
+        alert(array[element]);
+    }else{
+        alert("Please enter a valid input")
+    }
+}
+
+
+    </script>
+
+<input type="number" id="element" >
+<button onclick="getElement()">Get the element</button>
+
+</body>
+
+</html>

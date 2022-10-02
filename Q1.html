@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-1</title>
+</head>
+
+<body>
+
+    <h1>Find even values from an array, Make double of every element and find Array length manually</h1>
+
+    <script>
+
+        let arr = [10, 11, 47, 55, 98, 54, 21, 8, 3, 87]
+        let newArr = [];
+        let count = 0;
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                count++;
+                newArr.push(arr[i] * 2);
+            }
+        }
+
+        console.log(count);
+        console.log(newArr);
+
+
+    </script>
+
+</body>
+
+</html>

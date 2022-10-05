@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Array</title>
+</head>
+
+<body>
+
+    <h2>Insert a element in a specific position in Array without using Inbuilt Function</h2>
+
+    <script>
+        function insertToArray() {
+
+            let array = [45, 87, 44, 99, 78, 12];
+            let position = document.getElementById("position").value;
+            let newElement = document.getElementById("newElement").value;
+            newElement = parseInt(newElement);
+
+            for (let i = array.length-1; i >= 0; i--) {
+                if (i >= position) {
+                    array[i + 1] = array[i];
+                    if (i == position) {
+                        array[i] = newElement;
+                    }
+                }
+
+            }
+            console.log(alert(array));
+        }
+
+
+
+    </script>
+
+
+    <input type="text" placeholder="enter the position" id="position">
+
+    <input type="text" placeholder="enter the New Element" id="newElement">
+
+    <button onclick="insertToArray()">ADD</button>
+</body>
+
+</html>

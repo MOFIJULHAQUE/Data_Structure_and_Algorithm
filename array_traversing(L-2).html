@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Array Traversing</title>
+    <title>Array Traversing & Accessing the array element</title>
 </head>
 
 <body>
-    <h1>Array Traversing</h1>
+    <h1>Array Traversing || Array Traversing & Accessing the array element</h1>
 
     <script>
 
@@ -26,20 +26,20 @@
 
 
         //Accessing the array element
-function getElement(){
-    let element = document.getElementById("element").value;
-    if(element<=array.length && parseInt(element) && element > 0 ||  element ==0 && element != ""){
-        alert(array[element]);
-    }else{
-        alert("Please enter a valid input")
-    }
-}
+        function getElement() {
+            let element = document.getElementById("element").value;
+            if (element <= array.length && parseInt(element) && element > 0 || element == 0 && element != "") {
+                alert(array[element]);
+            } else {
+                alert("Please enter a valid input")
+            }
+        }
 
 
     </script>
 
-<input type="number" id="element" >
-<button onclick="getElement()">Get the element</button>
+    <input type="number" id="element">
+    <button onclick="getElement()">Get the element</button>
 
 </body>
 
